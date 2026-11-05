@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.auth-card input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-card button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-card button:hover {
+  background: #1d4ed8;
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.auth-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #dc2626;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #16a34a;
+  margin-bottom: 15px;
+}
+/* Student Directory */
+
+.students-container {
+  min-height: 100vh;
+}
+
+.students-header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.students-header h1 {
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.students-header button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.students-content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.students-content h2 {
+  margin-bottom: 20px;
+}
+
+.students-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.student-card h3 {
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.student-card p {
+  margin-top: 8px;
+}
